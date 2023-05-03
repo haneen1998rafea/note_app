@@ -12,7 +12,7 @@ class NoteViewBody extends StatelessWidget {
       child: Column(
         children: const <Widget>[
           RowAppBarCustom(),
-          ListViewNtoeBody(),
+          Expanded(child: ListViewNoteItem())
         ],
       ),
     );

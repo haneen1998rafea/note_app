@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
 
-class ListViewNtoeBody extends StatelessWidget {
-  const ListViewNtoeBody({Key? key}) : super(key: key);
+import 'tipe_flutter_note.dart';
+
+class ListViewNoteItem extends StatelessWidget {
+  const ListViewNoteItem({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return ListView.builder(itemBuilder: (context, index) {
+      return const Padding(
+        padding: EdgeInsets.symmetric(vertical: 4),
+        child: TipeFlutterNote(),
+      );
+    });
   }
 }
