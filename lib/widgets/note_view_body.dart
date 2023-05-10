@@ -11,7 +11,10 @@ class NoteViewBody extends StatelessWidget {
       padding: const EdgeInsets.only(top: 20, left: 20, right: 20),
       child: Column(
         children: const <Widget>[
-          RowAppBarCustom(),
+          RowAppBarCustom(
+            text: "Notes",
+            icon: Icon(Icons.search),
+          ),
           Expanded(child: ListViewNoteItem())
         ],
       ),
